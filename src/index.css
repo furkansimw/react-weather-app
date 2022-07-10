@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+Body {
+  background-color: #b0b5b3;
+}
+.Header {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  background-color: #208aae;
+}
+.Header > p {
+  font-weight: 500;
+  cursor: pointer;
+  margin: auto;
+  font-size: 2rem;
+  color: white;
+}
+.Content {
+  margin: auto;
+  max-width: 1250px;
+  min-width: 1000px;
+  display: flex;  
+  max-height: calc(100vh - 150px);
+  width: 100vw;
+  background-color: #dbdbdb;
+}
+.Countries {
+  overflow: scroll;
+  flex: 1;
+}
+.Countries::-webkit-scrollbar {
+  display: none;
+}
+.States::-webkit-scrollbar {
+  display: none;
+}
+.Cities::-webkit-scrollbar {
+  display: none;
+}
+.States {
+  overflow: scroll;
+  flex: 1;
+}
+.Cities {
+  overflow: scroll;
+  flex: 1;
+}
+.item {
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.banner {
+  width: 100vw;
+  height: 75px;
+}
+.item.active {
+  background-color: #208aae;
+}
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1250px;
+  min-width: 1000px;
+  align-items: center;
+  height: 100%;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.box > p {
+  font-weight: 500;
+  font-size: 20px;
 }
