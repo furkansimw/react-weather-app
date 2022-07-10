@@ -22,10 +22,11 @@ Body {
   color: white;
 }
 .Content {
+  position: relative;
   margin: auto;
   max-width: 1250px;
   min-width: 1000px;
-  display: flex;  
+  display: flex;
   max-height: calc(100vh - 150px);
   width: 100vw;
   background-color: #dbdbdb;
@@ -86,4 +87,25 @@ Body {
 .box > p {
   font-weight: 500;
   font-size: 20px;
+}
+.Preview {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: whitesmoke;
+  overflow: hidden;
+  position: absolute;
+  padding: 3rem;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 150px);
+}
+
+.data{
+
+  margin-top: 2rem;
+  text-align: center;
+}
+.data h1,h2{
+  padding: 5px;
 }
